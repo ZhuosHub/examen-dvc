@@ -18,6 +18,7 @@ stages:
     cmd: python src/models/grid_search.py
     deps:
     - data/normalized/X_train_scaled.csv
+    - data/processed_data/y_train.csv
     - src/models/grid_search.py
     outs:
     - models/best_params.pkl
